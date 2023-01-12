@@ -1,0 +1,495 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+:root {
+  --primary-color: #fff;
+  --primary-bg-color: #e50914;
+  --learn-more-color: #0071eb;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* header styling */
+.header {
+  height: 65px;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.new-label {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-color);
+  padding: 4px 7px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: none;
+  border-radius: 35px;
+}
+
+.new-label {
+  margin-right: 15px;
+}
+.learn-more {
+  margin-left: 30px;
+  color: var(--learn-more-color);
+  font-weight: 700;
+}
+
+.btn-arrow {
+  margin-left: 5px;
+}
+
+.header > p {
+  opacity: 75%;
+}
+.header .price {
+  font-weight: bolder;
+  font-size: 1.2rem;
+  margin-left: 5px;
+}
+
+/* showcase styling */
+
+.showcase {
+  position: relative;
+  height: 100vh;
+  background: url(./landingPageImage.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.showcase::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.showcase-inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  position: relative;
+  z-index: 2;
+}
+.logo {
+  width: 150px;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  top: 30px;
+  left: 30px;
+}
+.sign-in-btn {
+  margin-left: 22px;
+  background-color: var(--primary-bg-color);
+  color: var(--primary-color);
+  border: none;
+  border-radius: 4px;
+  padding: 9px 20px;
+  cursor: pointer;
+}
+.select-btn {
+  background-color: #000;
+  color: var(--primary-color);
+  padding: 9px 16px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  position: relative;
+}
+
+.globe-icon {
+  color: #fff;
+  position: absolute;
+  z-index: 2;
+  top: 33px;
+  right: 230px;
+  font-size: 12px;
+}
+
+/* showcase-content */
+.showcase-content {
+  color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 13.5rem;
+  width: 60%;
+  line-height: 2.7rem;
+}
+.showcase-content h1 {
+  font-size: 4rem;
+  line-height: 4rem;
+  z-index: 2;
+}
+.showcase-content {
+  position: relative;
+  z-index: 2;
+}
+
+.showcase-content p {
+  font-size: 1.2rem;
+  line-height: 3rem;
+}
+.showcase-content div input {
+  font-size: 1.3rem;
+  padding: 14px 10px;
+  margin-right: -4px;
+  border: 1px solid #ccc;
+  width: 25rem;
+}
+
+.get-started-btn {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-color);
+  padding: 15px 40px;
+  border: none;
+  font-size: 1.4rem;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+/* animation cards */
+.watch-on-tv,
+.watch-everywhere,
+.profile-for-kids,
+.download-your-shows {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #000;
+  color: var(--primary-color);
+  border: 5px solid #222;
+  height: 65vh;
+  justify-content: center;
+  align-items: center;
+  padding: 0 90px;
+}
+
+.watch-on-tv-content h1,
+.watch-everywhere-content h1,
+.profile-for-kids h1 {
+  margin-bottom: 20px;
+  font-size: 3rem;
+}
+.watch-on-tv-content h2,
+.watch-everywhere-content h2,
+.profile-for-kids-content h2 {
+  line-height: 1.5;
+}
+video,
+img {
+  width: 100%;
+}
+
+/* Footer  */
+.footer-container {
+  background-color: #000;
+  color: #626262;
+  border: 5px solid #222;
+  height: 60vh;
+}
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-left: 9rem;
+  /* margin-top:5rem; */
+}
+
+.footer-container p {
+  margin-top: 1.5rem;
+  line-height: 5rem;
+  margin-left: 9rem;
+}
+
+.footer-links li a {
+  color: #626262;
+  line-height: 2.5rem;
+  font-size: 0.8rem;
+}
+.footer-links li a:hover {
+  text-decoration: underline;
+}
+
+.language-switcher {
+  display: flex;
+  align-items: center;
+}
+.globe-icon-footer {
+  color: #626262;
+  position: absolute;
+  z-index: 2;
+  font-size: 12px;
+  padding-left: 5px;
+}
+.language-switcher select {
+  color: #626262;
+  border-color: #626262;
+}
+
+div .faqs-wrapper {
+  background-color: #000;
+  height: 50vh;
+  color: #fff;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.get-started-footer p {
+  margin-bottom: 15px;
+}
+
+.get-started-footer > input {
+  font-size: 1.3rem;
+  padding: 14px 10px;
+  margin-right: -4px;
+  border: 1px solid #ccc;
+  width: 25rem;
+}
+.faqs-container > h1 {
+  padding: 60px 0 30px;
+  font-size: 3rem;
+}
+
+/* signin container */
+
+.signin-section {
+  background: url(./landingPageImage.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #626262;
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  height: 100vh;
+}
+.signin-container {
+  width: 50%;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.75);
+  min-height: 660px;
+  padding: 60px;
+  margin-top: 50px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.signin-section::after {
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.signin-container h1 {
+  color: #fff;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+.signin {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.signin-container > h1 {
+  margin-bottom: 1.8rem;
+}
+.signin input {
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+  padding: 14px 10px;
+  border: 1px solid #ccc;
+  width: 21rem;
+}
+.signin-btn {
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  background-color: var(--primary-bg-color);
+  padding: 1rem 8rem;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  position: relative;
+  z-index: 2;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.checkbox-section {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.remember-me-check-box {
+  margin-left: 5px;
+}
+
+.remember-me-section,
+.signup-section {
+  color: #626262;
+  position: relative;
+  z-index: 2;
+}
+.remember-me-section {
+  display: flex;
+  justify-content: space-between;
+  color: #626262;
+  margin-top: 15px;
+  margin-bottom: 60px;
+}
+.remember-me-section a {
+  color: #626262;
+  margin: 0 auto;
+}
+.signup-btn {
+  color: #fff;
+}
+
+.recaptcha {
+  font-size: 0.9rem;
+}
+.recaptcha > a {
+  color: blue;
+}
+.recaptcha > a:hover {
+  text-decoration: underline;
+}
+
+.signup-section > p {
+  margin-bottom: 15px;
+}
+
+.need-help-signin:hover {
+  text-decoration: underline;
+}
+.signup-btn:hover {
+  text-decoration: underline;
+}
+.watch-everywhere-content {
+  margin-left: 20px;
+}
+/* media queries */
+
+/* tablets */
+@media (max-width: 950px) {
+  .showcase-content h1 {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+  }
+  .showcase-content p {
+    font-size: 1rem;
+    line-height: 2.2rem;
+  }
+  div input {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .get-started-btn {
+    padding: 13px 10px;
+  }
+  .watch-on-tv h2,
+  .watch-everywhere h2,
+  .profile-for-kids h2,
+  .download-your-shows h2 {
+    line-height: 1.2;
+    font-size: 1.3rem;
+  }
+  .watch-on-tv h1,
+  .watch-everywhere h1,
+  .profile-for-kids h1,
+  .download-your-shows h1 {
+    font-size: 2rem;
+  }
+
+  .get-started-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .signin-container {
+    width: 65%;
+  }
+}
+@media (max-width: 700px) {
+  .footer-links {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: -1.5rem;
+  }
+  .signin-btn {
+    padding: 1rem 7rem;
+  }
+  .signin-container {
+    width: 85%;
+  }
+}
+
+@media (max-width: 500px) {
+  .showcase-content p {
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+  }
+  .signin-container {
+    width: 85%;
+  }
+  .signin-btn {
+    padding: 1rem 7rem;
+  }
+  .watch-everywhere,
+  .watch-on-tv,
+  .profile-for-kids,
+  .download-your-shows {
+    grid-template-columns: 1fr;
+  }
+  .watch-everywhere-content h2,
+  .watch-on-tv-content h2,
+  .profile-for-kids-content h2,
+  .download-your-show-content h2 {
+    display: none;
+  }
+  .watch-everywhere-content h1,
+  .download-your-shows-photo {
+    order: 2;
+  }
+  .watch-everywhere-video,
+  .download-your-shows-photo {
+    order: 1;
+    margin-bottom: auto;
+  }
+}
